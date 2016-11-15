@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class='container'>
+<nav class ="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+<div class="container">
+    <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a href="/" class="navbar-brand">Dominic</a>    
+    </div>  
+    <div class="collapse navbar-collapse" id="navbar-collapse"> 
+        <ul class="nav navbar-nav">
+            <li><a href="{% url "list" %}">View all Posts</a></li>
+            <li><a href="{% url "Create" %}">Create a Post</a></li>
+            <li><a href="{% url "register" %}">Register</a></li>
+            <li><a href="{% url "movies" %}">Search For Movies</a></li>
+        </ul>
+
+    </div>
+</div>
+</nav>
+<hr>
+<div class='col-sm-6  col-sm-offset-3'>
+	<h1>{{ title }}</h1>
+<form method='GET' action=''>
+<input type='text' name='q' placeholder='Search posts' value="{{ request.GET.q }}"/>
+<input type='submit' value='Search'/>
+</form>
+{% for obj in object_list%}
+<div class="row">
+  <div class="col-sm-12">
+    <div class="thumbnail">
+    	{% if obj.image %}
+    	<img src='{{ obj.image.url }}' class='img-responsive' />
+    	{% endif %}
+      <div class="caption">
+        <h3><a href="{{ obj.get_absolute_url }}">{{obj.title}} </a><small>{{ obj.timestamp|timesince }} ago</small></h3>
+       {% if obj.user.get_full_name %} <p>Author: {{ obj.user.get_full_name}}</p> {% endif %}
+        <p>{{ obj.content|linebreaks|truncatechars:120 }}</p>
+        <p><a href="{{ obj.get_absolute_url }}" class="btn btn-primary" role="button">View</a></p>
+      </div>
+    </div>
+</div>
+<hr>
+</div>
+
+
+
+{% endfor %}
+
+<div class="pagination">
+    <span class="step-links">
+        {% if object_list.has_previous %}
+            <a href="?page={{ object_list.previous_page_number }}">previous</a>
+        {% endif %}
+
+        <span class="current">
+            Page {{ object_list.number }} of {{ object_list.paginator.num_pages }}.
+        </span>
+
+        {% if object_list.has_next %}
+            <a href="?page={{ object_list.next_page_number }}">next</a>
+        {% endif %}
+    </span>
+</div>
+
+</div>
+</div>
+{% endblock content %}

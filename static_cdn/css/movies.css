@@ -1,0 +1,230 @@
+h3{
+  color: black;
+}
+.img-responsive{
+     position: relative;
+    top: 0px;
+    right: 0px;
+    height: 70px;
+ width: auto;
+  display: block;
+    margin: 0 auto;
+   
+}
+section.module.parallax { 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+  /*background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;*/
+}
+section.module.content{
+ 
+ background-color: transparent!important;
+}
+section.module.parallax h1 {
+
+  color: gray;
+  font-family: 'Ultra', sans-serif; 
+  font-size: 70px;
+  line-height: 300px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0 5px black, 0 3px #343434;
+}
+section.module.parallax-1 {
+  background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/footy/vader.jpg") no-repeat center;
+}
+.fa{
+    position: absolute;
+    bottom: 0;
+    vertical-align: middle;
+    padding-left: 540px;
+    padding-bottom: 20px;
+    font-size: 50px;
+    color: white;
+}
+
+#steam{
+  opacity: 0.3;
+  padding-left: 135px;
+  padding-top: 30px;
+}
+
+.col-md-12:nth-child(odd){
+  background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+.col-md-12:nth-child(even){
+  background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+/*.col-md-12:nth-child(1) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(2) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(3) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+  }
+
+.col-md-12:nth-child(4) {
+ background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+
+}
+
+.col-md-12:nth-child(5) {
+    background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+ 
+}
+
+.col-md-12:nth-child(6) {
+    background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(7) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(8) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(9) {
+  background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star2.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+
+.col-md-12:nth-child(10) {
+   background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}*/
+  
+
+
+/*.col-md-12:nth-child(11){
+ background: url("C:/Users/Domz44/Desktop/Unomena/FrontEnd/Andro/Domz/static/img/star1.jpg") no-repeat right;
+  webkit-background-size: cove
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-left: 90px;
+  opacity: 0.5px;
+}
+*/
+
+/*Search Bar*/
+#custom-search-input{
+  padding-left: 40px;
+    padding: 3px;
+    border: solid 1px #E4E4E4;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+#custom-search-input input{
+    border: 0;
+    box-shadow: none;
+}
+
+#custom-search-input button{
+    margin: 2px 0 0 0;
+    background: none;
+    box-shadow: none;
+    border: 0;
+    color: #666666;
+    padding: 0 8px 0 10px;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input button:hover{
+    border: 0;
+    box-shadow: none;
+    border-left: solid 1px #ccc;
+}
+
+#custom-search-input .glyphicon-search{
+    font-size: 23px;
+}
+.col-md-6 {
+    width: 50%;
+    margin-left: 280px;
+}
+

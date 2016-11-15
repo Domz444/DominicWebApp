@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Register{% endblock %}
+{% block content %}
+<div class="container-fluid">
+	<div class='row'>
+
+		<div class="col-sm-12 col-md-7">
+			<div class="panel panel default">
+				<div class="panel-body">
+					<h3>Create New Account</h3>
+					<form class='form-horizontal' role='form' action="" method='post'>
+						<label for="username">Username</label>
+						<input name="username" type="username" class="form-control" id="username" aria-describedby="user" placeholder="Username">
+						<label for="exampleInputEmail1">Email address</label>
+						<input name="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+						<label for="exampleInputPassword1">Password</label>
+						<input name='password' type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+						{% csrf_token %}
+						<div class="form-group">
+							<div class='col-sm-offset-2 col-sm-10'>
+								<button type="submit" class=btn btn-success>Submit</button>
+
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% endblock content%}
